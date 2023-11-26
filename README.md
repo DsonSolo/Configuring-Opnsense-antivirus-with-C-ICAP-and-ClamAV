@@ -1,4 +1,4 @@
-**Configuring Opnsense antivirus with C-ICAP and ClamAV**
+*Configuring Opnsense antivirus with C-ICAP and ClamAV*
 
 In this lab, I successfully configured Opnsense antivirus by integrating
 C-ICAP and ClamAV, ensuring a robust defense against potential threats.
@@ -23,7 +23,7 @@ Navigate to Services \> C-ICAP \> Configuration
 Implement necessary configurations to enhance the effectiveness of the
 antivirus setup.
 
-<img src="./media/image1.png" style="width:5.69271in;height:3.6218in" />
+![Screenshot](https://github.com/DsonSolo/Configuring-Opnsense-antivirus-with-C-ICAP-and-ClamAV/blob/main/image1.png)
 
 Before proceeding with the steps, it's crucial to take a snapshot of all
 machines to ensure a safe starting point.
@@ -45,8 +45,7 @@ feature was enabled to grasp the intricacies of each configuration.
 - Enabled the c-icap service, leaving all other configurations at their
   default settings.
 
-<img src="./media/image2.png"
-style="width:5.20313in;height:2.61072in" />
+![Screenshot](https://github.com/DsonSolo/Configuring-Opnsense-antivirus-with-C-ICAP-and-ClamAV/blob/main/image2.png)
 
 **Note:** The full help feature played a pivotal role in gaining a
 comprehensive understanding of the various settings.
@@ -59,7 +58,7 @@ comprehensive understanding of the various settings.
 
 - Executed the crucial save command to implement the changes.
 
-> <img src="./media/image3.png" style="width:6.5in;height:1.43056in" />
+![Screenshot](https://github.com/DsonSolo/Configuring-Opnsense-antivirus-with-C-ICAP-and-ClamAV/blob/main/image3.png)
 
 3.  **ClamAV Signature Download:**
 
@@ -69,8 +68,7 @@ comprehensive understanding of the various settings.
 - Initiated the download of signatures, with a keen eye on the detailed
   setting descriptions.
 
-> <img src="./media/image4.png"
-> style="width:6.13021in;height:2.76056in" />
+![Screenshot](https://github.com/DsonSolo/Configuring-Opnsense-antivirus-with-C-ICAP-and-ClamAV/blob/main/image4.png)
 
 While awaiting the download, the full help feature remained enabled,
 ensuring a thorough comprehension of the settings.
@@ -91,12 +89,12 @@ system.
   freshclam services. Throughout this process, I adhered to default
   settings for other configurations.
 
-> <img src="./media/image5.png" style="width:6.34167in;height:4.2in" />
+![Screenshot](https://github.com/DsonSolo/Configuring-Opnsense-antivirus-with-C-ICAP-and-ClamAV/blob/main/image5.png)
 
 - To cement these changes, I executed the save command, fortifying the
   foundation of my antivirus setup.
 
-<img src="./media/image6.png" style="width:6.5in;height:1.16667in" />
+![Screenshot](https://github.com/DsonSolo/Configuring-Opnsense-antivirus-with-C-ICAP-and-ClamAV/blob/main/image6.png)
 
 **2. Dashboard Verification:**
 
@@ -105,14 +103,14 @@ system.
   critical antivirus components are actively engaged in safeguarding the
   system.
 
-<img src="./media/image7.png" style="width:6.5in;height:2.05556in" />
+![Screenshot](https://github.com/DsonSolo/Configuring-Opnsense-antivirus-with-C-ICAP-and-ClamAV/blob/main/image7.png)
 
 **3. ICAP Integration:**
 
 - I explored the Web Proxy settings by going through the options at Web
   Proxy \> Administration \> Forward Proxy options \> ICAP settings.
 
-> <img src="./media/image8.png" style="width:6.5in;height:3.08333in" />
+![Screenshot](https://github.com/DsonSolo/Configuring-Opnsense-antivirus-with-C-ICAP-and-ClamAV/blob/main/image8.png)
 
 - Enabled ICAP, a strategic move pivotal for elevating the robustness of
   the antivirus infrastructure.
@@ -120,7 +118,7 @@ system.
 - I applied the changes meticulously, ensuring seamless integration of
   ICAP into the overall system.
 
-<img src="./media/image9.png" style="width:6.5in;height:3.70833in" />
+![Screenshot](https://github.com/DsonSolo/Configuring-Opnsense-antivirus-with-C-ICAP-and-ClamAV/blob/main/image9.png)
 
 **Step 2: Testing Antivirus**
 
@@ -131,30 +129,29 @@ system to potential virus downloads.
 I conducted a Google search for the eicar test and clicked on the first
 link.
 
-<img src="./media/image10.png" style="width:6.5in;height:3.52778in" />
+![Screenshot](https://github.com/DsonSolo/Configuring-Opnsense-antivirus-with-C-ICAP-and-ClamAV/blob/main/image10.png)
 
 Upon clicking various links, Windows Defender intervened, demonstrating
 its protective function. I deliberately chose to proceed to simulate
 scenarios where Windows Defender might fail.
 
-<img src="./media/image11.png"
-style="width:6.23958in;height:2.15625in" />
+![Screenshot](https://github.com/DsonSolo/Configuring-Opnsense-antivirus-with-C-ICAP-and-ClamAV/blob/main/image11.png)
 
 The successful blocking of the site confirmed the effectiveness of the
 Opnsense ClamAV configuration in safeguarding the system.
 
-<img src="./media/image12.png" style="width:6.5in;height:5.22222in" />
+![Screenshot](https://github.com/DsonSolo/Configuring-Opnsense-antivirus-with-C-ICAP-and-ClamAV/blob/main/image12.png)
 
 **Step 3: Reviewing Log Files**
 
 I accessed the log files through Services \> C-ICAP-Log File.
 
-<img src="./media/image13.png" style="width:6.5in;height:3.09722in" />
+![Screenshot](https://github.com/DsonSolo/Configuring-Opnsense-antivirus-with-C-ICAP-and-ClamAV/blob/main/image13.png)
 
 The logs provided a comprehensive overview of antivirus activities,
 indicating successful detections.
 
-<img src="./media/image14.png" style="width:6.5in;height:2.47222in" />
+![Screenshot](https://github.com/DsonSolo/Configuring-Opnsense-antivirus-with-C-ICAP-and-ClamAV/blob/main/image14.png)
 
 With this, the lab concluded, showcasing the practicality and efficacy
 of the implemented antivirus measures.
