@@ -1,4 +1,4 @@
-*Configuring Opnsense antivirus with C-ICAP and ClamAV*
+# Configuring Opnsense antivirus with C-ICAP and ClamAV*
 
 In this lab, I successfully configured Opnsense antivirus by integrating
 C-ICAP and ClamAV, ensuring a robust defense against potential threats.
